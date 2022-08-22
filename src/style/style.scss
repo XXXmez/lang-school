@@ -14,14 +14,8 @@ ul, li {
     list-style: none;
 }
 
-.s {
-    &:nth-child(1) {
-        height: calc(100vh - $heightHeader);
-        margin-top: $heightHeader;
-    }
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
+.main {
+    margin-top: $heightHeader;
 }
 
 .header {
@@ -69,13 +63,87 @@ ul, li {
             font-size: 1rem;
             padding: 10px 20px;
             
-            
-            
-
             &:hover {
                 opacity: 1;
                 background-color: #f2f2f2;
             }
         }
+    }
+}
+
+.start {
+    height: calc(100vh - $heightHeader);
+    padding: 50px 20px;
+    background-color: #f6f8fc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+    }
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        width: 30%;
+    }
+    &__title {
+    }
+    &__description {
+    }
+    &__image {
+        width: 70%;
+    }
+}
+
+.advantage {
+    padding: 50px 20px;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title {
+    }
+    &__description {
+        margin-top: 10px;
+    }
+    &__cards {
+        margin-top: 50px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    &__item {
+        background: cornflowerblue;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 1;
+    }
+}
+
+.card {
+    padding: 15px;
+    width: 250px;
+
+    &__image {
+    }
+    &__text {
+    }
+    &__title {
+    }
+    &__description {
     }
 }
