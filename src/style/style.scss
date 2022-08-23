@@ -1,9 +1,11 @@
 $heightHeader: 50px;
+$cardBackground: linear-gradient(317deg, #7cd8fa, #9279fe);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -74,7 +76,7 @@ ul, li {
 .start {
     height: calc(100vh - $heightHeader);
     padding: 50px 20px;
-    background-color: #f6f8fc;
+    background: linear-gradient(317deg, #7cd8fa, #9279fe);
 
     display: flex;
     justify-content: center;
@@ -89,10 +91,14 @@ ul, li {
     }
     &__text {
         width: 30%;
+        color: #181818;
     }
     &__title {
+        font-size: 32px;
     }
     &__description {
+        margin-top: 30px;
+        line-height: 24px;
     }
     &__image {
         width: 70%;
@@ -104,13 +110,15 @@ ul, li {
 
     &__container {
         max-width: 1440px;
-        margin: 0 auto;
+        margin: 50px auto;
 
         display: flex;
         align-items: center;
         flex-direction: column;
     }
     &__title {
+        margin-top: 20px;
+        font-size: 32px;
     }
     &__description {
         margin-top: 10px;
@@ -125,18 +133,19 @@ ul, li {
         gap: 25px;
     }
     &__item {
-        background: cornflowerblue;
+        background: $cardBackground;
         border-radius: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-shrink: 1;
+        width: 250px;
     }
 }
 
 .card {
     padding: 15px;
-    width: 250px;
+    
 
     &__image {
     }
@@ -145,5 +154,113 @@ ul, li {
     &__title {
     }
     &__description {
+        font-size: 14px;
     }
 }
+
+.developers {
+    background-color: #f6f8fc;
+    padding: 50px 20px;
+
+    &__container {
+        max-width: 1440px;
+        margin: 50px auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    &__description {
+        margin-top: 10px;
+    }
+    &__cards {
+        margin-top: 50px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+    &__item {
+        background: $cardBackground;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 1;
+        width: 342px;
+    }
+}
+
+.card {
+    &__title {
+        &-role {
+            font-size: 10px;
+            border: 1px solid black;
+            line-height: 22px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.footer {
+    padding: 50px 20px 10px;
+    background-color: #5e78ad;
+    color: #d9d9d9;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0px auto;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__main {
+        width: 100%;
+        display: flex;
+        gap: 30px 100px;
+        flex-wrap: wrap;
+    }
+    &__wrapper {
+    }
+    &__title {
+    }
+    &__links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__link {
+        color: #d9d9d9;
+    }
+    &__school {
+        margin-top: 20px;
+        width: 100%;
+
+        &-text {
+            text-align: center;
+            border-bottom: 1px solid #b7c3d6;
+            padding: 2px 0;
+            font-size: 12px;
+        }
+        &-link {
+            color: rgb(139, 222, 255);
+        }
+    }
+}
+
+
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
