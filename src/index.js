@@ -1,8 +1,8 @@
+import App from "./app/app";
+
 import "./style/style.scss"
 import "./file/img/logo.svg"
 import "./file/img/1.png"
-
-console.log('Hi');
 
 // core version + navigation, pagination modules:
 import Swiper, { Navigation, Pagination } from 'swiper';
@@ -30,4 +30,14 @@ const swiper = new Swiper('.swiper', {
         },
     },
     speed: 900,
+});
+
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    const root = document.querySelector('body');
+
+    const app = new App(root);
+    app.start();
 });
