@@ -1,4 +1,4 @@
-import Component from "../../../component/component";
+import Component from "../../../../component/component";
 
 class Card extends Component {
     constructor(root, cardName, cardText, cardImg) {

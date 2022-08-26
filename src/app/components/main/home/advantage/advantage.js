@@ -1,6 +1,6 @@
-import Component from "../../../component/component";
+import Component from "../../../../component/component";
 import Card from "./card";
-import CardImg from "../../../../file/img/1.png"
+import CardImg from "../../../../../file/img/1.png"
 
 class Advantage extends Component {
     constructor(root) {

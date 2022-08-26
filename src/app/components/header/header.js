@@ -10,7 +10,7 @@ class Header extends Component {
 
         this.logo = new Component(this.conteiner.component, 'div', ['header__logo']);
         this.logoLink = new Component(this.logo.component, 'a', ['header__logo-link']);
-        this.logoLink.component.setAttribute('href', '#/')
+        this.logoLink.component.setAttribute('href', '#')
         this.logoLinkImg = new Component(this.logoLink.component, 'img', ['header__logo-img']);
         this.logoLinkImg.component.width = '50';
         this.logoLinkImg.component.height = '50';
@@ -19,15 +19,16 @@ class Header extends Component {
         this.nav = new Component(this.conteiner.component, 'div', ['header__nav']);
         this.navigation = new Component(this.nav.component, 'nav', ['navigation']);
         this.navigationList = new Component(this.navigation.component, 'ul', ['navigation__list']);
-        this.navigationLinkToMain = new NavLinks(this.navigationList.component, 'link1', '#/link111');
-        this.navigationLinkToTextbook = new NavLinks(this.navigationList.component, 'link2', '#/link222');
-        this.navigationLinkToGames = new NavLinks(this.navigationList.component, 'link3', '#/link333');
-        this.navigationLinkToStatistics = new NavLinks(this.navigationList.component, 'link4', '#/link444');
+        
+        this.navigationLinkToHome = new NavLinks(this.navigationList.component, 'Главная', '#');
+        this.navigationLinkToTextbook = new NavLinks(this.navigationList.component, 'Учебник', '#textbook');
+        this.navigationLinkToGames = new NavLinks(this.navigationList.component, 'Игры', '#games');
+        this.navigationLinkToStatistics = new NavLinks(this.navigationList.component, 'Статистика', '#statistics');
 
-        const links = [this.navigationLinkToMain, this.navigationLinkToTextbook, this.navigationLinkToGames, this.navigationLinkToStatistics];
+        const links = [this.navigationLinkToHome, this.navigationLinkToTextbook, this.navigationLinkToGames, this.navigationLinkToStatistics];
 
         window.addEventListener('hashchange', () => {
-            console.log('hashchange', window.location.hash, links);
+            //console.log('hashchange', window.location.hash, links);
         });
     }
 }

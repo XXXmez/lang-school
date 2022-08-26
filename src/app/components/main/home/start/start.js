@@ -1,5 +1,5 @@
-import Component from "../../../component/component";
-import StartImg from "../../../../file/img/1.png";
+import Component from "../../../../component/component";
+import StartImg from "../../../../../file/img/1.png";
 
 class Start extends Component {
     constructor(root) {

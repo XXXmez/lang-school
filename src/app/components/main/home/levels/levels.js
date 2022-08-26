@@ -1,4 +1,4 @@
-import Component from "../../../component/component";
+import Component from "../../../../component/component";
 
 class Levels extends Component {
     constructor(root) {

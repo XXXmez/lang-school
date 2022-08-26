@@ -11,6 +11,10 @@ class App {
         this.header = new Header(this.app.component);
         this.main = new Main(this.app.component);
         this.footer = new Footer(this.app.component);
+
+        window.addEventListener('hashchange', () => {
+            
+        });
     }
 
     start() {
