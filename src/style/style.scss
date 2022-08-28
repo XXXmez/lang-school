@@ -20,6 +20,13 @@ ul, li {
     margin-top: $heightHeader;
 }
 
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header {
     z-index: 2;
     background-color: #fff;

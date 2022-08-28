@@ -12,7 +12,7 @@ class Advantage extends Component {
         this.description = new Component(this.container.component, 'p', ['advantage__description'], 'Мы предлогаем');
 
         this.cards = new Component(this.container.component, 'div', ['advantage__cards']);
-        this.cardsList = new Component(this.container.component, 'ul', ['advantage__list']);
+        this.cardsList = new Component(this.cards.component, 'ul', ['advantage__list']);
 
         this.cardFree = new Card(this.cardsList.component, 'Имя', 'Описание', CardImg);
         this.cardGame = new Card(this.cardsList.component, 'Имя', 'Описание', CardImg);
