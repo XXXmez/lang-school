@@ -1,0 +1,50 @@
+.textbook {
+    padding: 0 20px;
+
+    &__container {
+        max-width: 1440px;
+        margin: 0px auto;
+        // display: flex;
+        // align-items: center;
+        // flex-direction: column;
+    }
+    &__header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        &-title {}
+        &-description {}
+    }
+    
+    &__levels {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__level {
+        width: 170px;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #edeeff;
+        padding: 10px;
+        border-radius: 10px;
+        user-select: none;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 0px 0px 5px 0px black;
+        }
+
+        &-description {}
+        &-complex {}
+        &-count {
+            margin-top: 10px;
+        }
+        &-title {}
+    }
+    &-works {
+        margin-top: 30px;
+    }
+}

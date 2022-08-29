@@ -1,5 +1,6 @@
 import Home from "../main/home/home";
 import Component from "../../component/component";
+import Textbook from "../main/textbook/textbook";
 
 class Routing {
     constructor(root) {
@@ -17,11 +18,8 @@ class Routing {
             {
                 hash: 'textbook',
                 init: () => {
-                    this.root.style.display = 'flex';
-                    this.root.style.alignItems = 'center';
-                    this.root.style.flex = '1 0 auto';
-                    this.root.style.justifyContent = 'center';
-                    this.content = new Component(this.root, 'h2', ['default'], 'Учебник в разработке');
+                    this.root.style = '';
+                    this.pageTextbook = new Textbook(this.root);
                 }
             },
             {
