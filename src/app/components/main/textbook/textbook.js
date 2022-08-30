@@ -13,10 +13,8 @@ class Textbook {
         this.textbookHeader = new Component(this.container.component, 'div', ['textbook__header']);
         this.textbookHeaderTitle = new Component(this.textbookHeader.component, 'h2', ['textbook__header-title'], 'Учебник');
         this.textbookHeaderDescr = new Component(this.textbookHeader.component, 'p', ['textbook__header-description'], 'Уровни сложности');
-
+        
         this.levels = new Levels(this.container.component);
-
-        this.works = new Works(this.container.component);
     }
 
 }
