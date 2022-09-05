@@ -1,0 +1,31 @@
+.details {
+    width: 350px;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    position: sticky;
+    top: 55px;
+
+    &__image {
+        display: none;
+    }
+    &__img {}
+    &__description {
+        margin-top: 15px;
+    }
+    &__word {}
+    &__wordTranslate {}
+    &__transcription {}
+    &__meaning {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    &__textMeaning {}
+    &__textMeaningTranslate {}
+    &__example {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    &__textExample {}
+    &__textExampleTranslate {}
+}
