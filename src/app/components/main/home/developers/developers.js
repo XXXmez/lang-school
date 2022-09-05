@@ -14,9 +14,9 @@ class Developers extends Component {
         this.cards = new Component(this.container.component, 'div', ['developers__cards']);
         this.cardsList = new Component(this.cards.component, 'ul', ['developers__list']);
 
-        this.card1 = new Card(this.cardsList.component, 'Руслан', 'Разработал главную страницу.', CardImg, 'Frontend', '#notGit');
-        this.card2 = new Card(this.cardsList.component, 'Not found', 'Not found', CardImg, 'Not found', '#notGit');
-        this.card3 = new Card(this.cardsList.component, 'Not found', 'Not found', CardImg, 'Not found', '#notGit');
+        this.card1 = new Card(this.cardsList.component, 'Руслан', 'Занимался разработкой всего что имеется', CardImg, 'Frontend', 'https://github.com/XXXmez');
+        // this.card2 = new Card(this.cardsList.component, 'Not found', 'Not found', CardImg, 'Not found', '#notGit');
+        // this.card3 = new Card(this.cardsList.component, 'Not found', 'Not found', CardImg, 'Not found', '#notGit');
     }
 }
 

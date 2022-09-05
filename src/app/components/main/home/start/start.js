@@ -9,7 +9,7 @@ class Start extends Component {
         this.info = new Component(this.container.component, 'div', ['start__info']);
 
         this.text = new Component(this.info.component, 'div', ['start__text']);
-        this.title = new Component(this.text.component, 'h2', ['start__title'], 'Выучите английский с НАМИ');
+        this.title = new Component(this.text.component, 'h2', ['start__title'], 'Выучите английский с Grymyl');
         this.description = new Component(this.text.component, 'p', ['start__description'], 'Нескучное онлайн-обучение английскому языку с помощью игр и интересных заданий в любое удобное для вас время');
 
         this.image = new Component(this.info.component, 'div', ['start__image']);

@@ -9,7 +9,6 @@ class Card extends Component {
         this.rus = new Component(this.component, 'p', ['works__card-rus'], data.wordTranslate);
 
         this.component.addEventListener('click', () => {
-            console.log(data);
             details.textContent = '';
             this.detail = new Component(details, 'div', ['details']);
 
@@ -31,9 +30,6 @@ class Card extends Component {
             this.detailTextExample.component.innerHTML = `${data.textExample}`;
             this.detailTextExampleTranslate = new Component(this.detailDescription.component, 'p', ['details__textExampleTranslate'], data.textExampleTranslate);
             this.detailTextExampleTranslate.component.innerHTML = `${data.textExampleTranslate}`;
-
-            // this.det = new Component(details, 'p', ['rrr']);
-            // this.det.component.innerHTML = `${data.textExample}`;
         });
 
         if (ind == 0 || (ind % 20) == 0) {

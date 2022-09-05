@@ -12,6 +12,7 @@ class Card extends Component {
         this.text = new Component(this.component, 'div', ['card__text']);
         this.title = new Component(this.text.component, 'h3', ['card__title']);
             this.link = new Component(this.title.component, 'a', ['card__title-link'], name);
+            this.link.component.target = '_blank'
             this.link.component.setAttribute('href', link);
             this.role = new Component(this.title.component, 'span', ['card__title-role'], position);
         this.description = new Component(this.text.component, 'p', ['card__description'], text);

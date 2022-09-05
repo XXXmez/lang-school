@@ -4,7 +4,6 @@ import Works from "./works/works";
 
 import "./style.scss";
 
-
 class Textbook {
     constructor(root) {
         this.root = root;
@@ -16,7 +15,6 @@ class Textbook {
         
         this.levels = new Levels(this.container.component);
     }
-
 }
 
 export default Textbook;

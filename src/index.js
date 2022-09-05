@@ -39,5 +39,5 @@ window.addEventListener('DOMContentLoaded', () => {
     const root = document.querySelector('body');
 
     const app = new App(root);
-    app.start();
+    // app.start();
 });

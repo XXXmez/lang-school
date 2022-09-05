@@ -3,6 +3,7 @@ import work from "../../../../words.json";
 import Card from "./card";
 import Level from "./level";
 import Textbook from "../textbook";
+import axios from "axios";
 
 class Levels extends Component {
     constructor(root) {
@@ -17,13 +18,16 @@ class Levels extends Component {
         this.c1 = new Level(this.component, 'Hard', 2401, 3000, 'C1', this.root);
         this.c2 = new Level(this.component, 'Hard', 3001, 3600, 'C2', this.root);
 
-        // this.level1.component.addEventListener('click', () => {
-        //     this.container = document.querySelector('.works-container');
-        //     // console.log('lvl-1', work[120]);
-        //     for(let i = 0; i < 20; i++) {
-        //         new Card(this.container, work[i].word, work[i].wordTranslate)
-        //     }
-        // })
+        const getList = async () => {
+            const allWords = []
+            const res = await axios
+                .get(`https://lern-words.herokuapp.com/words`)
+                .then((resp) => resp.data)
+            allWords.push(...res)
+            console.log('База', res);
+            
+        }
+        // getList()
     }
 }
 
