@@ -46,5 +46,60 @@
     }
     &-works {
         margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.works {
+    &__title {
+
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__lists {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    &__card {
+        width: 190px;
+        height: 85px;
+        padding: 15px 35px 20px 15px;
+        background: #edeeff;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &-eng {
+
+        }
+        &-rus {
+            
+        }
+
+        &:hover {
+            background: #d2d4fc;
+        }
+    }
+
+    &__details {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+    }
+    &__select {
+        padding: 5px 15px 5px 10px;
+        border-radius: 5px;
+        border: 0;
+        background: #5e78ad;
+        color: white;
     }
 }

@@ -20,6 +20,8 @@ class Level extends Component {
             }
             new Works(this.out, (start -1) / 20);
         })
+
+        if (start == 1) { this.component.click(); }
     }
 }
 

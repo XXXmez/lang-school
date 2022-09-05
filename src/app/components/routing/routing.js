@@ -29,7 +29,7 @@ class Routing {
                     this.root.style.alignItems = 'center';
                     this.root.style.flex = '1 0 auto';
                     this.root.style.justifyContent = 'center';
-                    this.content = new Component(this.root, 'h2', ['default'], 'Игры в разработке');
+                    this.content = new Component(this.root, 'h2', ['default'], 'Страница игр');
                 }
             },
             {
@@ -39,7 +39,7 @@ class Routing {
                     this.root.style.alignItems = 'center';
                     this.root.style.flex = '1 0 auto';
                     this.root.style.justifyContent = 'center';
-                    this.content = new Component(this.root, 'h2', ['default'], 'Статистика в разработке');
+                    this.content = new Component(this.root, 'h2', ['default'], 'Страница статистики');
                 }
             }
         ];
